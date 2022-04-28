@@ -3,7 +3,7 @@
 import type {HostComponent} from '../../node_modules/react-native/Libraries/Renderer/shims/ReactNativeTypes';
 import type {ViewProps} from '../../node_modules/react-native/Libraries/Components/View/ViewPropTypes';
 import React from 'react';
-import {ScrollView, StyleSheet, View, FlatList} from 'react-native';
+import {StyleSheet, View, FlatList} from 'react-native';
 import IndividualForecast from './IndividualForecast';
 import type {AbstractComponent, ElementRef} from 'react';
 import {getHours} from '../../utils/time-converter';

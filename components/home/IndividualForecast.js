@@ -1,8 +1,11 @@
+import type {HostComponent} from '../../node_modules/react-native/Libraries/Renderer/shims/ReactNativeTypes';
+import type {ViewProps} from '../../node_modules/react-native/Libraries/Components/View/ViewPropTypes';
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 import {selectIcon} from '../../utils/icon-selector';
 import {timeConverter, getHours} from '../../utils/time-converter';
+import type {AbstractComponent, ElementRef} from 'react';
 
 const HourForecast = data => {
   const type = data.data.weather[0].description;

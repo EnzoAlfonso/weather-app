@@ -17,7 +17,7 @@ const DailyForecast = (
 ): React$Element<
   AbstractComponent<ViewProps, ElementRef<HostComponent<ViewProps>>>,
 > => {
-  const daily = modifyDays(props.daily);
+  const daily: Object[] = modifyDays(props.daily);
   return (
     <View>
       <FlatList

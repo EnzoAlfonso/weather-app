@@ -22,7 +22,7 @@ const Temperatures = (
 ): React$Element<
   AbstractComponent<ViewProps, ElementRef<HostComponent<ViewProps>>>,
 > => {
-  const rainmm = props.rain * 100;
+  const rain = props.rain * 100;
   return (
     <View>
       <View style={styles.details}>
@@ -30,7 +30,7 @@ const Temperatures = (
           <View>
             <Rain />
           </View>
-          <Text>{`${rainmm} %`}</Text>
+          <Text>{`${rain} %`}</Text>
         </View>
         <View>
           <View style={styles.feelsLike}>
